@@ -93,6 +93,8 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="bg-[url('/assets/top-background.jpg')] h-56">k</div>
+
      
 
     </div>
