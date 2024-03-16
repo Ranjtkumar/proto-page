@@ -5,10 +5,6 @@ import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 // import Insurance from '../../components/Insurance';
 
-
-
-
-
 export default function Home() {
 
   const tabbars = ["Home","About Us","Insurance","Agents","Blog","Contact"]
@@ -25,20 +21,16 @@ export default function Home() {
             <div className='hover:bg-orange-900 hover:rounded-full  
                hovertext-white text-black
                hover:text-white relative h-7 w-7 flex justify-center items-center'> 
-               <div className="absolute">
-                    <InstagramIcon className='text-[0.9rem] '/>
-               </div>
+                <InstagramIcon className='text-[0.9rem] '/>
               
             </div>
 
-             <div className='hover:bg-sky-700 hover:rounded-full  
+            <div className='hover:bg-sky-700 hover:rounded-full  
                hovertext-white text-black
                hover:text-white relative h-7 w-7 flex justify-center items-center'> 
-               <div className="absolute">
-                    <TwitterIcon className='text-[0.9rem] '/>
-               </div>
-              
+                <TwitterIcon className='text-[0.9rem] '/>
             </div>
+            
 
              <div className='group hover:bg-blue-900 hover:rounded-full  
                hovertext-white text-black
@@ -93,12 +85,31 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[url('/assets/top-background.jpg')] h-56">
-        k
+      <div className="bg-[url('/assets/top-background.jpg')] relative mt-10  w-full">
+        <div className="w-full flex justigy-between relative">
+          <div className="absolute text-[10rem] text-white font-bold left-[-8%]">
+            INSURANCE
+          </div>
+
+          <div className="absolute text-8xl w-72 text-white font-bold right-0 pt-10">
+            
+            <div className="absolute right-5px">HOME</div> 
+            TRAVEL <span>LIFE CAR</span>
+          </div>
+        </div>
+        
+
+        <div className="grid grid-cols-12 mt-20 w-full">
+          <div className="col-span-5">
+            l
+          </div>
+          <div className="col-span-6 z-10 grid justify-center">
+            <img src="/assets/agent.png" className="w-[600px] h-[600px]" />
+          </div>
+        </div>
+       
       </div>
-
-     
-
+      
     </div>
   );
 }
