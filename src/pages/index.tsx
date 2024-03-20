@@ -3,6 +3,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import { Menu } from "@mui/icons-material";
+
 // import Insurance from '../../components/Insurance';
 
 export default function Home() {
@@ -12,7 +14,7 @@ export default function Home() {
   return (
     <div>
       
-      <div className="flex justify-between mx-36 pt-6 items-center">
+      <div className="flex justify-between mx-10 lg:mx-14 xl:mx-36 pt-6 items-center">
         <img src="/assets/logo.png" className="w-32"/>
 
         <div className='flex items-center'>
@@ -62,9 +64,9 @@ export default function Home() {
 
       </div>
 
-      <div className='flex mx-36 pt-7 gap-8 justify-between'>
+      <div className='flex px-10 lg:px-16 xl:px-36 pt-7 gap-8 lg:justify-between justify-end sticky top-0 z-20 bg-white py-5'>
 
-        <div className='flex gap-12'>
+        <div className='hidden lg:flex gap-12 items-center'>
         {
           
           tabbars.map((each)=>{
@@ -83,32 +85,38 @@ export default function Home() {
           font-bold hover:bg-green-600 hover:text-white cursor-pointer text-center'>
           GET A QOUTE
         </div>
+
+        <div className="block lg:hidden bg-[#0047BB] h-10 w-10 rounded flex items-center justify-center">
+          <Menu className="text-white text-xl font-bold"/>
+        </div>
       </div>
 
-      <div className="bg-[url('/assets/top-background.jpg')] relative mt-10  w-full">
+      <div className="bg-[url('/assets/top-background.jpg')] relative  w-full overflow-hidden">
        
-          <div className="absolute text-[10rem] text-white font-bold left-[-8%]">
+          <div className="hidden lg:block absolute text-[10rem] text-white font-bold lg:left-[-18%] xl:left-[-8%]">
             INSURANCE
           </div>
-
         
-            <div className="absolute top-10 right-24 text-8xl font-bold text-white">HOME</div>
-            <div className="absolute top-36 right-[-28px]  text-8xl font-bold text-white pl-10">TRAVEL</div> 
-            <div className=" absolute w-72 top-60 right-6 text-8xl font-bold text-white">
+            <div className="hidden lg:block absolute top-10 lg:right-[-30px] xl:right-24 text-8xl font-bold text-white">HOME</div>
+            <div className="hidden lg:block absolute top-36 lg:right-[-96px] xl:right-[-28px]  text-8xl font-bold text-white overflow-hidden">TRAVEL</div> 
+            <div className="hidden lg:block absolute xl:w-72 top-60 lg:right-[-44px] xl:right-6 text-8xl font-bold text-white">
              
               <div className=" text-8xl font-bold text-white pl-5 pt-3">LIFE</div>
               <div className="  text-8xl font-bold text-white pt-3">CAR</div>
             </div>
             
 
-        <div className="grid grid-cols-12 pt-16 w-full">
-          <div className="col-span-5 grid items-center pl-24 ">
-            <div className="text-5xl font-bold leading-[3.5rem]">
+        <div className="block lg:grid lg:grid-cols-12 pt-16 w-full">
+          <div className="lg:col-span-5 flex flex-col justify-center pl-14 xl:pl-24 pt-10 w-3/4 lg:w-full">
+            <div className="text-5xl lg:text-4xl xl:text-5xl font-bold leading-[3.5rem] w-full">
               Providing Insurance Protection For You
             </div>
-            <div></div>
+            <div className=" text-xl font-medium pt-5">Surprisingly great rates, get started right now.</div>
+            <div className="text-sm lg:text-base font-bold text-white bg-[#0047BB] h-16 w-44 lg:w-52 rounded-full mt-8 lg:mt-5 xl:mt-8 flex items-center justify-center">
+              GET STARTED
+            </div>
           </div>
-          <div className="col-span-6 z-10 grid justify-center">
+          <div className="hidden col-span-6 z-10 lg:grid justify-center">
             <img src="/assets/agent.png" className="w-[600px] h-[600px]" />
           </div>
         </div>
