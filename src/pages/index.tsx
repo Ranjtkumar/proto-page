@@ -86,22 +86,27 @@ export default function Home() {
       </div>
 
       <div className="bg-[url('/assets/top-background.jpg')] relative mt-10  w-full">
-        <div className="w-full flex justigy-between relative">
+       
           <div className="absolute text-[10rem] text-white font-bold left-[-8%]">
             INSURANCE
           </div>
 
-          <div className="absolute text-8xl w-72 text-white font-bold right-0 pt-10">
-            
-            <div className="absolute right-5px">HOME</div> 
-            TRAVEL <span>LIFE CAR</span>
-          </div>
-        </div>
         
+            <div className="absolute top-10 right-24 text-8xl font-bold text-white">HOME</div>
+            <div className="absolute top-36 right-[-28px]  text-8xl font-bold text-white pl-10">TRAVEL</div> 
+            <div className=" absolute w-72 top-60 right-6 text-8xl font-bold text-white">
+             
+              <div className=" text-8xl font-bold text-white pl-5 pt-3">LIFE</div>
+              <div className="  text-8xl font-bold text-white pt-3">CAR</div>
+            </div>
+            
 
-        <div className="grid grid-cols-12 mt-20 w-full">
-          <div className="col-span-5">
-            l
+        <div className="grid grid-cols-12 pt-16 w-full">
+          <div className="col-span-5 grid items-center pl-24 ">
+            <div className="text-5xl font-bold leading-[3.5rem]">
+              Providing Insurance Protection For You
+            </div>
+            <div></div>
           </div>
           <div className="col-span-6 z-10 grid justify-center">
             <img src="/assets/agent.png" className="w-[600px] h-[600px]" />
